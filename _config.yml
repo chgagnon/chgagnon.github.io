@@ -29,9 +29,16 @@ url: "chgagnon.github.io" # the base hostname & protocol for your site, e.g. htt
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
+# remote_theme: ronv/ultra
 plugins:
   - jekyll-feed
+
+
+collections:
+  projects:
+    permalink: /projects/:slug
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
