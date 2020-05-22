@@ -20,5 +20,5 @@ You can find the source code for Jekyll at GitHub:
 [jekyll-organization]: https://github.com/jekyll
  -->
 
-Charlie's [Resume]({{site.url}}/assets/Gagnon-Charles.pdf). Charlie's [CV]({{site.url}}/assets/Gagnon-Charles.pdf). Charlie's [Résumé]({{site.url}}/assets/Gagnon-Charles.pdf). (These are all the same.) <br>
+Charlie's <!-- [Resume]({{site.url}}/assets/Gagnon-Charles.pdf). Charlie's [CV]({{site.url}}/assets/Gagnon-Charles.pdf). Charlie's [Résumé]({{site.url}}/assets/Gagnon-Charles.pdf). (These are all the same.) <br> -->
 
