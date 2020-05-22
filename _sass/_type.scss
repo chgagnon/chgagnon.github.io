@@ -1,3 +1,8 @@
+* {
+    background-color: #BFD7EA;
+    // background-color: #7392B7;
+}
+
 body {
   font-size: 1rem;
   line-height: 1.5;
@@ -25,15 +30,26 @@ a,a:visited {
   font-weight: bold;
 
   &:hover {
-    color: skyblue;
+    // color: #e79fc4;
+    // color: #FCF6BD;
+    // color: #FFCAB1;
+    color: #F92A82;
+
   }
+
+
 }
 
 a.active {
-    background: black;
-    padding: 0.5rem;
-    color: white;
-    font-weight: bold;
+    // background: black;
+    border-radius: 10%;
+    // padding: 0.5rem;
+    // color: #e79fc4;
+    // font-weight: bold;
+    // text-transform: uppercase;
+    // color: #FFCAB1;
+    color: #F92A82;
+
 }
 
 blockquote {

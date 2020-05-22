@@ -2,12 +2,13 @@
 layout: default
 ---
 
-{% for project in site.projects reversed %}
+{% assign sorted = site.projects | sort: 'date' %}
+{% for project in sorted reversed %}
 <article role="article">
-  <h2><a href="{{ site.baseurl }}{{ project.url }}">
+  <h2 class='projtitle'><a href="{{ site.baseurl }}{{ project.url }}">
     {{ project.title }}
   </a></h2>
-  <p>{{ project.summary }}</p>
-    <time class="date" datetime="{{ project.date | date_to_xmlschema }}">{{ project.date | date: "%Y" }} &middot; {{ project.category }}</time>
+    <time class="date" datetime="{{ project.date | date_to_xmlschema }}">{{ project.date | date: "%b" }} {{ project.date | date: "%Y" }}</time>
+    <div class='projdescription'>{{ project.summary }}</div>
 </article>
 {% endfor %}

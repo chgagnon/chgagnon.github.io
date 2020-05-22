@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: about
 title: About
 permalink: /about/
 ---
-
+<!-- 
 ## Pithy Narrative
 
-Charlie
+Charlie -->
 
 <!-- 
 You can find the source code for Minima at GitHub:
@@ -20,3 +20,6 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll
  -->
+
+Charlie's Resume. Charlie's CV. Charlie's Résumé. (These are all the same.) <br>
+
