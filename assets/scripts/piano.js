@@ -7,7 +7,10 @@ $(function(){
   // })
 
   // sessionStorage does NOT persist while testing locally because there is no session
-  sessionStorage.setItem('firstClick', 'f');
+  // avoids overwriting the value every time this code is run (since the code run every time a page loads)
+  if (!sessionStorage.getItem('firstClick')) {
+    sessionStorage.setItem('firstClick', 'f');
+  }
   // var firstClick = false;
 
   function logFirstClick() {
