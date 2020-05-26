@@ -106,4 +106,29 @@ pre {
   text-align: center;
   margin: 0;
   padding: 0;
+  transition: max-height 1s ease-out;
+  height: auto;
+  overflow: hidden;
+  max-height: 200px;
+  margin: -8px;
+
+}
+
+.collapsed {
+  max-height: 0px;
+}
+
+
+/* for animation:
+*/
+@keyframes grow-in {
+  from {
+    opacity: 0%;
+    max-height: 0px;
+  }
+
+  to {
+    max-height: 5px; 
+    opacity: 100%; 
+  }
 }

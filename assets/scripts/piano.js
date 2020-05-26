@@ -37,19 +37,23 @@ $(function(){
       // display click-enticing message
       const nameContainer = $('.nameContainer');
       // this works without indexing because only one element has class nameContainer
-      nameContainer.append("<h3 class='clickbait'>(Click anywhere to enable audio!)</h3>");
-      // console.log(nameContainer.children('.fancy_title'));
-      nameContainer.children('.fancy_title').css('margin', '5px');
+      // alert('hey there');
+      // $clickbait = $("<h3>", {class: 'clickbait', text: 'Click anywhere to enable audio!'});
+
+      // nameContainer.append($clickbait);
+      // nameContainer.children('.fancy_title').css('margin', '5px');
+      $('.clickbait').removeClass('collapsed');
     }
 
   };
 
   // remove added HTML element and reset margin on Charlie's name
   function removeClickbait() {
-    const charliename = $('.fancy_title');
-    charliename.css('margin', '')
+    // const charliename = $('.fancy_title');
+    // // charliename.css('margin', '')
     const clickbait = $('.clickbait');
-    clickbait.remove();
+    // clickbait.remove();
+    clickbait.addClass('collapsed');
   }
 
   function startOrStopHelper(note_num, song, whetherstart) {
@@ -97,6 +101,7 @@ $(function(){
   // delay enticing message for 5s
   setTimeout(enticeClickToEnableAudio, 5000);
 
+  // randomly select song from songbook when page loads
   var songNum = Math.floor(Math.random() * songbook.length);
 
   var instrument = SampleLibrary.load({
