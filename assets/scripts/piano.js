@@ -6,11 +6,21 @@ $(function(){
   //   $(this).css('filter', 'invert(100%)');
   // })
 
+  // randomly select song from songbook when page loads and fix it for the session
+  var songNum = Math.floor(Math.random() * songbook.length);
+
   // sessionStorage does NOT persist while testing locally because there is no session
   // avoids overwriting the value every time this code is run (since the code run every time a page loads)
   if (!sessionStorage.getItem('firstClick')) {
     sessionStorage.setItem('firstClick', 'f');
   }
+
+  if (!sessionStorage.getItem('songNum')) {
+    sessionStorage.setItem('songNum', songNum.toString(10))
+  }
+
+  let chosenSongNum = parseInt(sessionStorage.getItem('songNum'), 10)
+
   // var firstClick = false;
 
   function logFirstClick() {
@@ -101,12 +111,9 @@ $(function(){
   // delay enticing message for 5s
   setTimeout(enticeClickToEnableAudio, 5000);
 
-  // randomly select song from songbook when page loads
-  var songNum = Math.floor(Math.random() * songbook.length);
-
   var instrument = SampleLibrary.load({
     // selected song, and second entry (index 1) is the instrument
-    instruments: songbook[songNum][1]
+    instruments: songbook[chosenSongNum][1]
   });
 
   // wait until saxophone samples are loaded
@@ -123,13 +130,13 @@ $(function(){
         $(this).addClass('pianoletter');
         // set index to songbook as a randomized session variable
         // alert(songbook);
-        startOrStopNote($(this), songbook[songNum], true);
+        startOrStopNote($(this), songbook[chosenSongNum], true);
         // sax.triggerAttack('A3');
         },
         // function to perform when no longer hovering
         function() {
           $(this).removeClass('pianoletter');
-          startOrStopNote($(this), songbook[songNum], false);
+          startOrStopNote($(this), songbook[chosenSongNum], false);
           // sax.triggerRelease('A3');
         }
       )
