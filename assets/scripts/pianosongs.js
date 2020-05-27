@@ -28,7 +28,9 @@ var songbook = [[al, 'piano'],
                 [majorscale, 'piano'],
                 [wholetonescale, 'piano'],
                 [furelise, 'piano'],
-                [oldtownroad, 'piano']];
+                [oldtownroad, 'piano'],
+                [heartandsoul, 'piano'],
+                [clocks, 'piano']];
                 // [sentimentalmood, 'piano']];
 
 // var songbook = [[furelise, 'piano']]
