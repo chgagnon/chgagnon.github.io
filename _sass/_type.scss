@@ -52,9 +52,18 @@ a.active {
 
 }
 
+.centeringDiv {
+  text-align: center;
+}
+
 .demoLink {
+  display: inline-block;
   font-size: large;
   text-align: center;
+  background-color: #E9D758;
+  border-radius: 10px;
+  width: 60%;
+  font-size: larger;
 }
 
 blockquote {
