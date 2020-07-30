@@ -50,6 +50,7 @@ plugins:
   # - jekyll-redirect-from
   - jekyll-seo-tag
 
+no_post_dirs: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
