@@ -20,5 +20,12 @@ You can find the source code for Jekyll at GitHub:
 [jekyll-organization]: https://github.com/jekyll
  -->
 
-Charlie's [Resume]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). Charlie's [CV]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). Charlie's [Résumé]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). (These are all the same.) <br>
+Charlie's [Resume]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). Charlie's [CV]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). Charlie's [Résumé]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). (These are all the same.) 
+<br>
+<div class='centeringDiv'>
+  <h2>Charlie's face:</h2>
+</div>
+<div class='centeringDiv'>
+  <img class='charliePortrait' src="{{site.url}}/assets/images/portrait.jpeg" alt="A picture of Charlie's face.">
+</div>
 

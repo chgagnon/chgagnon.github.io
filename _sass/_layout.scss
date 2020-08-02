@@ -1,3 +1,10 @@
+.charliePortrait {
+  margin: 4px;
+  box-shadow: 5px 5px 8px gray;
+  width: 40%;
+  height: 40%;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -5,7 +12,7 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
 }
 
