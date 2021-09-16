@@ -1,0 +1,101 @@
+---
+layout: project
+title: Weenix
+summary: Operating system modeled after early Unix
+date: 2021-05-01
+---
+
+<div class='projdescription'>
+
+  <p>
+    Semester-long project completed as a half-credit addition to 
+    <a href="http://www.cs.brown.edu/courses/csci1670/">Brown CS 167 - Operating Systems</a>
+    (known as <strong>CS 169</strong>).
+  </p> 
+  <p>
+    The project includes <strong>student</strong> implementations of:
+    <ul>
+        <li>
+            Single-processor kernel <strong>threads</strong>
+        </li>
+        <li>
+            A <tt>tty</tt> <strong>line discipline</strong>
+        </li>
+        <li>
+            <strong>Drivers</strong> for <tt>/dev/zero</tt> and <tt>/dev/null</tt>
+        </li>
+        <li>
+            <strong>Virtual file system</strong> - a kernel-facing API to abstract system call implementations
+            to be indpendent of the disk interactions performed by the particular file system implementation
+        </li>
+        <li>
+            <strong>The System V File System (S5FS)</strong>
+        </li>
+        <li>
+            A <strong>virtual memory</strong> system - handles pagefaults 
+            with permissions checking
+            and maintains shadow memory objects for private mappings
+        </li>
+        <li>
+            The following system calls:
+            <ul>
+                <li>
+                    <tt><strong>fork()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>mmap()</strong></tt> and 
+                    <tt><strong>munmap()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>brk()</strong></tt> and 
+                    <tt><strong>sbrk()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>open()</strong></tt> and 
+                    <tt><strong>close()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>dup()</strong></tt> and 
+                    <tt><strong>dup2()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>read()</strong></tt> and 
+                    <tt><strong>write()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>lseek()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>mknod()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>link()</strong></tt> and 
+                    <tt><strong>unlink()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>mkdir()</strong></tt> and 
+                    <tt><strong>rmdir()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>rename()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>stat()</strong></tt> and 
+                    <tt><strong>getdents()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>chdir()</strong></tt>
+                </li>
+                <li>
+                    <tt><strong>waitpid()</strong></tt>  and 
+                    <tt><strong>getpid()</strong></tt>
+                </li>
+            </ul>
+        </li>
+    </ul>
+  </p>
+  <p>
+      Code for this project is <strong>not</strong> public on GitHub,
+      but can be made available on request.
+  </p>
+</div>
