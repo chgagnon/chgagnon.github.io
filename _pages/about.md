@@ -22,6 +22,8 @@ You can find the source code for Jekyll at GitHub:
 
 Charlie's [Resume]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). Charlie's [CV]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). Charlie's [Résumé]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). (These are all the same.) 
 <br>
+Charlie's [Resume]({{site.url}}/assets/documents/Gagnon-Charlie-printable.pdf) with a white background (for printing).
+<br>
 <div class='centeringDiv'>
   <h2>Charlie's face:</h2>
 </div>
