@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post" role="article">
-  <h1>{{ page.title }} - <a href={{page.github}}> on GitHub </a></h1>
+  <h1>{{ page.title }} {% if page.github != "none" %} - <a href={{page.github}}> on GitHub </a> {% endif %} </h1>
   <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %Y" }} {{ page.category }}</time>
   {{ content }}
 </article>
