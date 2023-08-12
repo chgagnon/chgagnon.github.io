@@ -28,6 +28,6 @@ Charlie's [Resume]({{site.url}}/assets/documents/Gagnon-Charlie-printable.pdf) w
   <h2>Charlie's face:</h2>
 </div>
 <div class='centeringDiv'>
-  <img class='charliePortrait' src="{{site.url}}/assets/images/portrait.jpeg" alt="A picture of Charlie's face.">
+  <img class='charliePortrait' src="/assets/images/portrait.jpeg" alt="A picture of Charlie's face.">
 </div>
 

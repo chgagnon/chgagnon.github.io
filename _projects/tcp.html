@@ -36,13 +36,22 @@ github: none
   </p>
 
   <p>
-    As part of my senior capstone requirements, I implemented <strong>TCP Tahoe</strong> for congestion control,
+    As part of my senior capstone requirements, I added <strong>TCP Tahoe</strong> for congestion control,
     which involves <strong>Slow Start</strong>, <strong>Congestion Avoidance</strong>,
-    and <strong>Fast Retransmit</strong> from
+    and <strong>Fast Retransmit / Fast Recovery</strong> from
     <a href="https://datatracker.ietf.org/doc/html/rfc5681/">RFC 5681</a>.
+    When congestion control is applied, data transmission is much "smoother", leading to fewer packets
+    retransmitted and less variance in the number of bytes in flight during file transmission.
   </p> 
   <p>
+    In our tests, congestion control shrinks the average packet size. As a result, file transmission
+    was faster <strong>without</strong> congestion control applied. However, <strong>congestion control could
+    speed up transmission in high-traffic scenarios</strong>, such as when multiple nodes send files simultaneously.
   </p>
+    <a href="/tcp-tahoe-results">Click here</a> to view window scaling plots and Stevens curves for a 1 MB file
+    transfer, as well as more discussion on the effect of <strong>TCP Tahoe</strong>.
+  </p> 
+
   <p>
       Code for this project is <strong>not</strong> public on GitHub,
       but can be made available on request.
