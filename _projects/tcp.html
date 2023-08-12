@@ -1,0 +1,50 @@
+---
+layout: project
+title: TCP/IP
+summary: Full implementation of TCP over IP using UDP as a link layer
+date: 2022-05-17
+github: none
+---
+
+<div class='projdescription'>
+
+  <p> 
+    
+    <a href="https://castleman.space/projects/tcpip/">Thomas Castleman</a>
+    and I implemented IP (using UDP as the link layer) and then TCP (on top of IP) in Rust, as the semester-long project for
+    <a href="https://cs.brown.edu/courses/csci1680/">Brown CS 1680 - Computer Networks</a>,
+    taught by Nicholas DeMarinis.
+  </p>
+
+  <p>
+    The IP layer implements 
+    <a href="https://datatracker.ietf.org/doc/html/rfc2453">RIP (RFC 2453)</a>
+    for routing, which dynamically updates routing tables as nodes join and leave the network.
+    We added support for <strong>Echo</strong>, <strong>Echo Reply</strong>,
+     and <strong>Time Exceeded</strong> messages, according to
+    <a href="https://datatracker.ietf.org/doc/html/rfc792">ICMP (RFC 792)</a>,
+    in order to implement a <tt><strong>traceroute</strong></tt> program, which prints the sequence of
+    IP addresses in the network along the shortest path from the node
+    where <tt><strong>traceroute</strong></tt> is launched
+    to the node of the user's target address.
+  </p>
+
+  <p>
+    Our <a href="https://datatracker.ietf.org/doc/html/rfc793">TCP (RFC 793)</a> implementation
+    can transfer a 5 MB file in a few seconds, and guarantees <strong>zero packet loss</strong>, even 
+    over a channel that sporadically drops packets.
+  </p>
+
+  <p>
+    As part of my senior capstone requirements, I implemented <strong>TCP Tahoe</strong> for congestion control,
+    which involves <strong>Slow Start</strong>, <strong>Congestion Avoidance</strong>,
+    and <strong>Fast Retransmit</strong> from
+    <a href="https://datatracker.ietf.org/doc/html/rfc5681/">RFC 5681</a>.
+  </p> 
+  <p>
+  </p>
+  <p>
+      Code for this project is <strong>not</strong> public on GitHub,
+      but can be made available on request.
+  </p>
+</div>
