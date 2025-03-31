@@ -20,9 +20,12 @@ You can find the source code for Jekyll at GitHub:
 [jekyll-organization]: https://github.com/jekyll
  -->
 
-Charlie's [Resume]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). Charlie's [CV]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). Charlie's [Résumé]({{site.url}}/assets/documents/Gagnon-Charlie.pdf). (These are all the same.) 
+Charlie's resume: [light
+mode]({{site.url}}/assets/documents/Gagnon-Charlie-printable.pdf), [dark
+mode]({{site.url}}/assets/documents/Gagnon-Charlie-dark.pdf)
 <br>
-Charlie's [Resume]({{site.url}}/assets/documents/Gagnon-Charlie-printable.pdf) with a white background (for printing).
+I don't have a separate CV, resumé, or résumé, but I hope that the links above have
+the info you need!
 <br>
 <div class='centeringDiv'>
   <h2>Charlie's face:</h2>
